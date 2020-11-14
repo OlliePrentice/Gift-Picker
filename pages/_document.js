@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import Share from "../components/share";
 
 export default class MyDocument extends Document {
   render() {
@@ -8,7 +7,6 @@ export default class MyDocument extends Document {
         <Head />
         <body>
           <Main />
-          <Share/>
           <NextScript />
         </body>
       </Html>

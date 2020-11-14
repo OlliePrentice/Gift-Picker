@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import { getRandomProduct } from '../lib/api'
 import Head from 'next/head'
 import Intro from '../components/intro'
+import Share from "../components/share";
 
 export default function Index({ preview, allProducts }) {
   const heroProduct = allProducts[0]
@@ -15,6 +16,7 @@ export default function Index({ preview, allProducts }) {
         <Container>
           <Intro/>
         </Container>
+        <Share/>
       </Layout>
     </>
   )

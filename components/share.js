@@ -1,4 +1,4 @@
-import {SITE_URL} from "../lib/constants";
+import {SITE_URL, SITE_INFO} from "../lib/constants";
 import {
     EmailShareButton,
     EmailIcon,
@@ -11,7 +11,6 @@ import {
     WhatsappShareButton,
     WhatsappIcon
 } from "react-share";
-import Link from "next/link";
 
 export default function Intro() {
     return (
@@ -20,27 +19,27 @@ export default function Intro() {
             <EmailShareButton
                 url={SITE_URL}
                 subject="I've found this website that helps you find gifts"
-                body={"SITE_INFO"}>
+                body={SITE_INFO}>
                 <EmailIcon size={36} />
             </EmailShareButton>
             <FacebookShareButton
                 url={SITE_URL}
-                quote={"SITE_INFO"}>
+                quote={SITE_INFO}>
                 <FacebookIcon size={36} />
             </FacebookShareButton>
             <TwitterShareButton
                 url={SITE_URL}
-                title={"SITE_INFO"}>
+                title={SITE_INFO}>
                 <TwitterIcon size={36} />
             </TwitterShareButton>
             <RedditShareButton
                 url={SITE_URL}
-                title={"SITE_INFO"}>
+                title={SITE_INFO}>
                 <RedditIcon size={36} />
             </RedditShareButton>
             <WhatsappShareButton
                 url={SITE_URL}
-                title={"SITE_INFO"}>
+                title={SITE_INFO}>
                 <WhatsappIcon size={36} />
             </WhatsappShareButton>
         </div>
