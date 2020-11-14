@@ -28,7 +28,7 @@ export default function Product({preview, products}) {
     )
 }
 
-export async function getStaticProps({preview = false}) {
+export async function getServerSideProps({preview = false}) {
     const products = await getRandomProduct(preview)
     return {
         props: {preview, products},
